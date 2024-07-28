@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <title>Northern Support Services PTY LTD</title>
+        <link rel="stylesheet" href="functionality/css/homepage.css" />
+        <link rel="stylesheet" href="functionality/css/contactus.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+        <body>
+            <div>
+
+            <div class="container padding-corner">
+                <!--Add a Call-to-action button to call or schedule and appointment -->
+                <div class="">
+                    <a href="index.html"> 
+                        <img class="logo" src="functionality/images/og1.png">
+                    </a>
+                </div>
+                <div>
+                    <ul class="menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="application.html">Apply</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="aboutus.html">About Us</a></li>
+                        <li><a href="contactus.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Contact Form -->
+            <div class="contact-form">
+                <h2>Be a Part of our Journey</h2>
+                <form onsubmit="sendEmail(); reset(); return false;" id="application-form">
+
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="phone">Phone:</label>
+                    <input type="phone" id="phone" name="phone" required>
+
+                    <label for="dropdown">Select an option:</label>
+                    <select id="dropdown" name="dropdown">
+                        <option value="option1">Disability Support Worker</option>
+                        <option value="option2">Admin</option>
+                        <option value="option3">Support Coordinator</option>
+                        <option value="option3">Disability Services Officer</option>
+                        <option value="option3">Registered Nurse</option>
+                    </select>
+
+                    <label for="resume">Upload Resume:</label>
+                    <input type="file" name="attachment" accept=".pdf" required>
+
+                    <label for="coverletter">Upload Cover Letter:</label>
+                    <input type="file" name="attachment" accept=".pdf" required>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            <!-- Footer -->
+            <footer class="footer">
+                <p>&copy; 2023 ABC Disability Serv Pty Ltd. All rights reserved.</p>
+            </footer>
+            <!-- Scripts -->
+			<script src="functionality/javascript/application.js"></script>
+        </div>
+           
+        </body>
+    </head>
+</html>
