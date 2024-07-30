@@ -3,6 +3,7 @@
         <title>Northern Support Services PTY LTD</title>
         <link rel="stylesheet" href="functionality/css/homepage.css" />
         <link rel="stylesheet" href="functionality/css/contactus.css" />
+        <link rel="stylesheet" href="functionality/css/aboutus.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     </head>
         <body>
@@ -29,35 +30,67 @@
 
                 <hr class="separator2">
 
+                <div class="hero">
+                    <div>
+                      <h1>Contact Us</h1>
+                    </div>
+                  </div>
+
                 <!-- Contact Form -->
                 <div class="contact-form">
+                    <p class="successmessage" id="responseMessage" style="display:none;"></p>
                     <form id="contactForm">
-                        <h2>Contact Us</h2>
 
-                        <label for="name">Name:</label>
+                        <label class="paddingtop" for="name">Name:</label>
                         <input type="text" id="name" name="name" placeholder="Please enter your full name" required>
 
-                        <label for="email">Email:</label>
+                        <label class="paddingtop" for="email">Email:</label>
                         <input type="email" id="email" name="email" placeholder="Please enter your email address" required>
 
-                        <label for="phone">Phone:</label>
+                        <label class="paddingtop" for="phone">Phone:</label>
                         <input type="text" id="phone" name="phone" placeholder="Please enter your phone number" required>
 
-                        <label for="message">Message:</label>
+                        <label class="paddingtop" for="referral">How do you know about us?</label>
+                        <textarea rows="4" id="referral" name="referral" placeholder="How do you know about us?"></textarea>
+
+                        <label class="paddingtop" for="message">Message:</label>
                         <textarea rows="4" id="message" name="message" placeholder="How can we help you?"></textarea>
 
                         <button type="submit" class="submit">Send</button>
                     </form>
-                    <p id="responseMessage" style="display:none;"></p>
                 </div>
             
                 <!-- Scripts -->
                 <script src="functionality/javascript/contactus.js"></script>
 
-                <!-- Footer should be at the bottom of the page-->
-                <footer class="footer">
-                    <p>&copy; 2024 Northern Support Services Pty Ltd. All rights reserved.</p>
-                </footer>
+                  <!-- Footer -->
+            <footer>
+                <div class="footer-container">
+                    <div class="footer-section">
+                        <h3>Contact</h3>
+                        <p>Email: info@example.com</p>
+                        <p>Phone: (123) 456-7890</p>
+                        <p>Address: 123 Main St, City, Country</p>
+                    </div>
+                    <div class="footer-section">
+                        <p style="padding: 8%;"><i>Northern Support Services acknowledges traditional owners of the land, the Aboriginal and Torres Strait Islander 
+                            people, on which we operate and pay our respects to their past, present and emerging.</i></p>
+                    </div>
+                    <div class="footer-section social-media" style="padding-left: 10%;">
+                        <h3>Follow Us on social media</h3>
+                        <a href="https://www.instagram.com/yourprofile" target="_blank" aria-label="Instagram">
+                          <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com/yourprofile" target="_blank" aria-label="Facebook">
+                          <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://www.youtube.com/yourprofile" target="_blank" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                          </a>
+                      </div>
+                </div>
+                <p style="text-align: center;">Copyright &copy; 2024 Northern Support Services Pty Ltd. All rights reserved.</p>
+            </footer>
             </div>
     </body>
 </html>
