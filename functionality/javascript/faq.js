@@ -14,8 +14,10 @@ document.addEventListener('DOMContentLoaded', function() {
         // Toggle the display of the answer
         if (answer.style.display === 'block') {
           answer.style.display = 'none';
+          icon.textContent = '-';
         } else {
           answer.style.display = 'block';
+          icon.textContent = '+';
         }
       });
     });
