@@ -48,9 +48,8 @@
   .service-row {
     display: flex;
     align-items: center;
- /*   border: 1px solid #ddd;*/
-    border-radius: 8px;
-    overflow: hidden;
+ /*   border: 1px solid #ddd;
+    border-radius: 8px;*/
   }
   
   /* Left column for the image */
@@ -114,5 +113,19 @@
   
   li {
     margin-bottom: 10px; /* Space between items */
+  }
+  
+
+  .card {
+    background-color: #f0f0f0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    opacity: 0; /* Hidden by default */
+    transform: translateX(100%); /* Positioned off-screen to the left */
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  .card.show {
+    opacity: 2;
+    transform: translateX(0); /* Moves the card to the center */
   }
   
