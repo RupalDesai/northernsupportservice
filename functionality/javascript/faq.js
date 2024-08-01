@@ -1,25 +1,19 @@
-// scripts.js
-
 document.addEventListener('DOMContentLoaded', function() {
-    const faqItems = document.querySelectorAll('.faq-question');
-  
-    faqItems.forEach(item => {
-      item.addEventListener('click', function() {
-        // Toggle the active state for the clicked question
-        this.classList.toggle('active');
-  
-        // Get the corresponding answer element
-        const answer = this.nextElementSibling;
-  
-        // Toggle the display of the answer
-        if (answer.style.display === 'block') {
-          answer.style.display = 'none';
-          icon.textContent = '-';
-        } else {
-          answer.style.display = 'block';
-          icon.textContent = '+';
-        }
-      });
+  // Select all FAQ items
+  const faqItems = document.querySelectorAll('.faq-item');
+
+  faqItems.forEach(item => {
+    const question = item.querySelector('.faq-question');
+    const answer = item.querySelector('.faq-answer');
+    const icon = question.querySelector('.icon');
+
+    // Toggle the answer and the icon
+    question.addEventListener('click', function() {
+      answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+      question.classList.toggle('active');
+
+      // Update the icon text
+      icon.textContent = icon.textContent === '+' ? '-' : '+';
     });
   });
-  
+});
