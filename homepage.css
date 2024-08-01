@@ -1,0 +1,332 @@
+ .logo {
+    max-width: 20%;
+    height: auto;
+    float: left;
+  }
+
+  .container {
+    display: flex;
+  }
+
+  .column {
+    flex: 2;
+    padding: 15px;
+    font-size: large;
+  }
+  
+  .menu {
+    font-weight: bolder;
+  }
+
+  .menu li {
+    display: inline-block;
+    margin-right: 10px;
+    padding-right: 20px;
+  }
+
+  .menu li a:hover {
+    text-decoration: underline;
+  }
+
+  .contact-header ul {
+    list-style-type: none; 
+    font-size:medium;
+  }
+
+  .menu li a {
+    color: rgb(21, 21, 85);
+    text-decoration: none;
+  }
+  
+  .contact-form {
+    max-width: 50%;
+    margin: 30px auto;
+  }
+
+  .headingunderline{
+    border-bottom: solid 3px rgb(21, 21, 85);
+    display: inline-block;
+  
+  }
+
+  .separator {
+    border-top: 5px solid #a7d5ef;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .banner{
+    background-color: #d1e8f6;
+  }
+
+  .separator2 {
+    border-top: 1px #7f888f;
+  }
+
+  .separatorService {
+    border-top: 1px #a7d5ef;
+  }
+
+  .service-section {
+    text-align: center;
+    display: flex;
+    justify-content: center; 
+  }
+
+  .service-card {
+    display: inline-block;
+    width: 30%;
+    margin: 2%;
+    padding: 20px;
+    text-align: left;
+  }
+
+  /* Hover Effect */
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.event-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+  .service-card h3 {
+    margin-top: 0;  
+  }
+
+  .service-card p {
+    margin-bottom: 20px;
+  }
+
+  .event-section {
+    text-align: center;
+    display: flex;
+    justify-content: center; 
+  }
+
+  .event-card {
+    padding: 2%;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .event-card h3 {
+    margin-top: 0;
+  }
+
+  .event-card p {
+    margin-bottom: 2%;
+  }
+
+  .event-card img {
+    width: 70%;
+  }
+
+  .intro-section {
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .intro-card {
+    flex-basis: calc(50.33% - 2%); /* Adjust the percentage and margin as needed */
+  }
+
+  .intro-card h1 {
+    margin-top: 0;
+  }
+
+  .intro-card p {
+    margin-bottom: 2%;
+  }
+
+  .intro-card img{
+    width: 100%;
+  }
+
+  .section {
+    padding: 5% 0;
+    text-align: center;
+  }
+
+  .section-heading {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+
+  .section-content {
+    margin: 0 auto;
+  }
+
+  .section-button {
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: rgb(21, 21, 85);
+  }
+
+  .section-button:hover {
+    background-color: red;
+  }
+
+  .footer{
+    padding: 2px;
+    color: white;
+    background-color: rgb(37, 37, 103);
+  }
+
+  .gapontop{
+    padding-top: 2%;
+  }
+
+  .red-icon {
+    color: rgb(21, 21, 85);
+  }
+
+  .red-icon:hover{
+   color:red; 
+  }
+  
+  .padding-corner{
+    width: 80%; /* Adjust width as needed */
+    margin: 0 auto; /* This centers the element horizontally */
+    text-align: center; /* Centers text inside the container */
+    padding: 20px; /* Adds padding around the content */
+  }
+
+  /* Container for the image */
+.oval-image-container {
+  width: 50%; /* Set the desired width */
+  height: 50%; /* Set the desired height */
+  overflow: hidden; /* Hide any overflow from the image */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%; /* Make the container oval */
+}
+
+/* Container to hold both images */
+.image-container {
+  position: relative;
+  width: 500px;  /* Set the desired width */
+  height: 500px; /* Set the desired height */
+  overflow: hidden; /* Hide any overflow from the image */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10%; /* Make the container oval */
+}
+
+/* Background image */
+.background-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the image covers the container */
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1; /* Layering order */
+}
+
+/* Overlay image */
+.overlay-image {
+  width: 20%; /* Set desired width for overlay image */
+  position: absolute;
+  top: 20%; /* Position from the top */
+  left: 80%; /* Position from the left */
+  z-index: 2; /* Higher z-index to appear above the background image */
+}
+
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+.service-card1 {
+  flex: 1 1 30%;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-card1:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.service-icon {
+  font-size: 50px;
+  margin-bottom: 15px;
+}
+.service-title {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+.service-description {
+  font-size: 1em;
+  color: #555;
+}
+.service-button {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #007BFF;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+.service-button:hover {
+  background: #0056b3;
+}
+
+.intro-title {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.services-grid {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.services-grid h2 {
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.grid-item {
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.grid-item:hover {
+  transform: translateY(-5px);
+  background-color: #f0f0f0;
+}
+
+.grid-item h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.grid-item p {
+  font-size: 1em;
+  color: #666;
+}
