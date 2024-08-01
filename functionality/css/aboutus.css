@@ -134,3 +134,72 @@ footer {
 .social-media a:hover {
   color: #ddd;
 }
+
+.container {
+  display: flex;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 20px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  padding: 20px;
+  flex: 1;
+}
+
+/*.icon-container {
+  width: 30%;
+  height: 15%;
+  margin: 0 auto 15px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+}*/
+
+.icon-container img {
+  width: 20%;
+  height: 10%;
+}
+
+.card-title {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+.mission-title {
+  color: #ff4d4d;
+}
+
+.vision-title {
+  color: #4d94ff;
+}
+
+.values-title {
+  color: #4dff4d;
+}
+
+.card-text {
+  font-size: 1em;
+  color: #666;
+  padding: 0 10px;
+}
+
+.card:hover{
+  transform: translateY(-10px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-text ul{
+  text-align: left;
+}
+
+.card-text li{
+  padding-top:3%;
+}
