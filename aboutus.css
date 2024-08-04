@@ -1,0 +1,259 @@
+  .hero {
+    background: url('../images/header2.jpg') no-repeat center center;
+    background-size: cover;
+    height: 200px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    position: relative;
+  }
+  .hero h1 {
+    font-size: 3em;
+    margin: 0;
+  }
+  .hero p {
+    font-size: 1.2em;
+  }
+  .hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.2);
+  }
+  .hero * {
+    position: relative;
+  }
+
+.img-container {
+  width: 500px;  /* Set the desired width */
+  height: 500px; /* Set the desired height */
+  overflow: hidden; /* Hide any overflow from the image */
+  display: flex;
+  justify-content: center;
+  object-fit: cover; /* Options: fill, contain, cover, scale-down, none */
+}
+
+/* Style the signature container */
+.signature {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  font-family: 'Cursive', sans-serif; /* Example font for a personal touch */
+  color: #333; /* Text color */
+}
+
+/* Style for the text container */
+.signature-text {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Style for the name */
+.name {
+  font-size: 1em;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Style for the title */
+.title {
+  font-size: 0.7em;
+  color: #777; /* Subtle color for the title */
+  margin: 0;
+}
+
+/* Basic styling for the footer */
+footer {
+  background-color: rgb(37, 37, 103);
+  color: #fff;
+  padding: 20px 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 10px;
+}
+
+.footer-section h3 {
+  margin-bottom: 15px;
+}
+
+.footer-section p,
+.footer-section ul,
+.footer-section li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-section ul {
+  padding-left: 0;
+}
+
+.footer-section li {
+  margin-bottom: 10px;
+}
+
+.footer-section a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.social-media a {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 24px;
+}
+
+.social-media a:hover {
+  color: #ddd;
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 20px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  padding: 20px;
+  flex: 1;
+}
+
+/*.icon-container {
+  width: 30%;
+  height: 15%;
+  margin: 0 auto 15px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+}*/
+
+.icon-container img {
+  width: 20%;
+  height: 10%;
+}
+
+.card-title {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+.mission-title {
+  color: #ff4d4d;
+}
+
+.vision-title {
+  color: #4d94ff;
+}
+
+.values-title {
+  color: #4dff4d;
+}
+
+.card-text {
+  font-size: 1em;
+  color: #666;
+  padding: 0 10px;
+}
+
+.card:hover{
+  transform: translateY(-10px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-text ul{
+  text-align: left;
+}
+
+.card-text li{
+  padding-top:3%;
+}
+
+.form {
+  background-color: #f1f1f1;
+  display: flex;
+  flex-direction: column;
+  padding:2vw 4vw;
+  width:90%;
+  max-width: 600px;
+  border-radius: 10px;
+  }
+  
+  form h2 {
+  color: #555;
+  font-weight: 800;
+  margin-bottom: 20px;
+  }
+  
+  form input, form textarea {
+  border:0;
+  margin:5px 0;
+  padding:10px;
+  outline:none;
+  background-color:#fff;
+  font-size: 16px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  form button{
+  padding:15px;
+  background: #ff5361;
+  color:#fff;
+  font-size: 18px;
+  border: 0;
+  outline: none;
+  cursor:pointer;
+  margin: 20px auto 0;
+  border-radius: 30px;
+  width: 30%;
+  cursor: pointer;
+  }
+  
+  form button:hover{
+  opacity: 0.6;
+  background: green;
+  }
+  
+  .paddingtop{
+  padding-top: 2%;
+  }
+  
+  .successmessage{
+  background: green;
+  }
+

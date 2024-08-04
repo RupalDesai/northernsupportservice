@@ -211,7 +211,7 @@
 /* Container to hold both images */
 .image-container {
   position: relative;
-  width: 500px;  /* Set the desired width */
+  width: 600px;  /* Set the desired width */
   height: 500px; /* Set the desired height */
   overflow: hidden; /* Hide any overflow from the image */
   display: flex;
@@ -282,6 +282,7 @@
   border-radius: 4px;
   transition: background 0.3s;
 }
+
 .service-button:hover {
   background: #0056b3;
 }
@@ -329,4 +330,123 @@
 .grid-item p {
   font-size: 1em;
   color: #666;
+}
+
+.image-container-footer {
+  position: relative;
+  width: 30%;  /* Set the desired width */
+  height: 30%;/* Set the desired height */
+  overflow: hidden; /* Hide any overflow from the image */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top:10%;
+  padding-left:10%;
+}
+
+.contact-section {
+  padding: 50px 20px;
+  }
+  
+  .contact-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 30px;
+  border-radius: 10px;
+  color: black;
+  max-width: 1200px;
+  margin: 0 auto;
+  }
+  
+  
+  .contact-info {
+  max-width: 45%;
+  }
+  
+  .contact-info h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  }
+  
+  .contact-info p {
+  font-size: 1em;
+  margin-bottom: 20px;
+  }
+  
+  .contact-info a {
+  text-decoration: underline;
+  }
+  
+  .contact-details p {
+  font-size: 1em;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  }
+  
+  .contact-details img {
+  margin-right: 10px;
+  }
+
+
+  
+.section {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-container {
+  position: relative;
+  height: 100vh; /* Adjust height as needed */
+  background: url('../images/image5.jpg') no-repeat center center/cover;
+}
+
+.background-image {
+  display: none; /* Hide the background image tag since we use it as background in the container */
+}
+
+.overlay-image {
+  position: absolute;
+  width: 150px; /* Adjust width as needed */
+  height: auto;
+  left: 50%;
+  transform: translateX(-50%);
+  top: calc(100vh - 150px); /* Adjust this value based on the height of the image to position it half on the background and half on the content */
+  z-index: 10;
+}
+
+.intro-section {
+  background-color: #fff;
+  padding: 20px;
+  position: relative;
+  z-index: 0;
+  text-align: center;
+}
+
+.intro-card {
+  margin-top: 150px; /* Add margin to push content below the overlay image */
+}
+
+.intro-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+p {
+  margin: 10px 0;
+}
+
+.service-button {
+  background-color: #007BFF;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.service-button:hover {
+  background-color: #0056b3;
 }
