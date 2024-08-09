@@ -36,3 +36,7 @@ document.getElementById('contactForm').addEventListener('submit', function(event
         document.getElementById('responseMessage').style.display = 'block';
     });
 });
+
+window.addEventListener('load', function() {
+    document.querySelector('.containerRotate').classList.add('visible');
+});
