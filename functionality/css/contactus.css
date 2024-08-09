@@ -154,3 +154,17 @@ max-width: 100%;
     border-radius: 4px;
     transition: background 0.3s;
   }
+
+  .containerRotate {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    opacity: 0;
+    transform: rotate(-10deg);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.visible {
+    opacity: 1;
+    transform: rotate(0);
+}

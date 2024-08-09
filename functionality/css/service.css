@@ -129,3 +129,23 @@
     transform: translateX(0); /* Moves the card to the center */
   }
   
+  /* Add this to your CSS */
+.slide-in {
+  transform: translateX(-100%);
+  opacity: 0;
+  animation: slideInAnimation ease 1.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slideInAnimation {
+  0% {
+      transform: translateX(-100%);
+      opacity: 0;
+  }
+  100% {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+/* Add this class to the elements you want to slide in */
