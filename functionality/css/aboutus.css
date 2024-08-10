@@ -31,7 +31,7 @@
   }
 
 .img-container {
-  width: 500px;  /* Set the desired width */
+  width: 200px;  /* Set the desired width */
   height: 500px; /* Set the desired height */
   overflow: hidden; /* Hide any overflow from the image */
   display: flex;
@@ -256,3 +256,26 @@ footer {
   .successmessage{
   background: green;
   }
+
+    /* Add this to your CSS */
+.slide-in {
+  transform: translateX(-100%);
+  opacity: 0;
+  animation: slideInAnimation ease 1.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slideInAnimation {
+  0% {
+      transform: translateX(-100%);
+      opacity: 0;
+  }
+  100% {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+.intro-card img{
+  width: 70%;
+}
