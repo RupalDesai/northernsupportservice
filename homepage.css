@@ -450,3 +450,77 @@ p {
 .service-button:hover {
   background-color: #0056b3;
 }
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.image-wrapper {
+  flex: 1;
+  max-width: 100%;
+  padding: 10px;
+  position: relative;
+}
+.image-wrapper img {
+  width:100%;
+  height: auto;
+  display: block;
+  border-radius: 5px;
+}
+.small-image {
+  position: absolute;
+  top: 10%;
+  right: 15px; /* Adjust the value to control how much the image overlaps */
+  transform: translateX(50%);
+  z-index: 10;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid white;
+  animation: rotateImage 20s linear infinite;
+}
+/* Rotation animation */
+@keyframes rotateImage {
+  from {
+      transform: translateX(50%) rotate(0deg);
+  }
+  to {
+      transform: translateX(50%) rotate(360deg);
+  }
+}
+.description {
+  flex: 1;
+  padding: 20px;
+  text-align: justify;
+}
+@media (max-width: 768px) {
+  .container {
+      flex-direction: column;
+  }
+  .small-image {
+      right: 50%;
+      transform: translateX(50%) translateY(-50%);
+      top: 0;
+  }
+}
+
+/* Add this to your CSS */
+.fade-in {
+  opacity: 0;
+  animation: fadeInAnimation ease 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+/* Add this class to the elements you want to fade in */
