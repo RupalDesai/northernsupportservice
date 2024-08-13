@@ -168,3 +168,20 @@ max-width: 100%;
     opacity: 1;
     transform: rotate(0);
 }
+
+.logo1 {
+  background-size: cover;
+  animation: zoomOut 1s ease-out forwards;
+}
+
+/* Define the zoom-out animation */
+@keyframes zoomOut {
+  0% {
+      transform: scale(1.2); /* Start with the logo zoomed in (120% of its original size) */
+      opacity: 0;
+  }
+  100% {
+      transform: scale(1); /* End with the logo at its original size */
+      opacity: 1;
+  }
+}
