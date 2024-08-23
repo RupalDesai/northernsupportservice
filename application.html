@@ -33,7 +33,7 @@
                     </div>
                 </div>
                     
-                <div class="containerRotate">
+                <div class="slide-in">
                     <section class="contact-section">
                         <div class="contact-container">
                             <div class="contact-info">
@@ -55,10 +55,12 @@
                                     <button class="service-button1">Contact Us</button>
                                 </a>
                             </div>
+                            
                             <!-- Contact Form -->
                             <div class="contact-form">
-                                <form onsubmit="sendEmail(); reset(); return false;" id="application-form">
-                
+                                <p class="successmessage" id="responseMessage" style="display:none;"></p>
+                                <form id="contactForm">
+
                                     <label for="name">Full Name:</label>
                                     <input type="text" id="name" name="name" required>
                 
@@ -78,12 +80,9 @@
                                     </select>
                 
                                     <label for="resume" style="margin-top:2%;">Upload Resume:</label>
-                                    <input type="file" name="attachment" accept=".pdf" required>
-                
-                                   <!--<label for="coverletter">Upload Cover Letter:</label>
-                                    <input type="file" name="attachment" accept=".pdf" required>--> 
-                
-                                    <button type="submit">Submit</button>
+                                    <input type="file" id="resume" name="resume"  accept=".pdf" required>
+
+                                    <button type="submit" class="submit">Send</button>
                                 </form>
                             </div>
                         </div>
