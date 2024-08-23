@@ -482,7 +482,8 @@ p {
   border: 3px solid white;
   animation: rotateImage 20s linear infinite;
 }
-/* Rotation animation */
+
+/* Rotation animation
 @keyframes rotateImage {
   from {
       transform: translateX(50%) rotate(0deg);
@@ -490,7 +491,8 @@ p {
   to {
       transform: translateX(50%) rotate(360deg);
   }
-}
+}*/
+ 
 .description {
   flex: 1;
   padding: 20px;
