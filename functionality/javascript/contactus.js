@@ -5,16 +5,18 @@ document.getElementById('contactForm').addEventListener('submit', function(event
     const email = document.getElementById('email').value;
     const phone = document.getElementById('phone').value;
     const message = document.getElementById('message').value;
+    const referral = document.getElementById('referral').value;
 
     const data = {
-        service_id: 'service_p3zr1fp',
-        template_id: 'template_661e1n5',
+        service_id: 'service_q2debbn',
+        template_id: 'template_3bk8v1k',
         user_id: '8yddtZXCraQjrxFhe',
         template_params: {
             'name': name,
             'email': email,
             'phone': phone,
-            'message': message
+            'message': message,
+            'referral': referral
         }
     };
 
