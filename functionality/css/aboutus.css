@@ -164,6 +164,11 @@ footer {
 }*/
 
 .icon-container img {
+  width: 40%;
+  height: 30%;
+}
+
+.icon-container-dup img {
   width: 20%;
   height: 10%;
 }
