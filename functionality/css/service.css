@@ -40,8 +40,8 @@
 .service-section {
     display: flex;
     flex-direction: column;
-    gap: 20px; /* Space between rows */
-    padding: 20px;
+    gap: 2%; /* Space between rows */
+    padding: 2%;
   }
   
   /* Each service row */
@@ -114,8 +114,6 @@
   li {
     margin-bottom: 10px; /* Space between items */
   }
-  
-
   .card {
     background-color: #f0f0f0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -149,3 +147,6 @@
 }
 
 /* Add this class to the elements you want to slide in */
+.font{
+  font-size: 1.2em;
+}
