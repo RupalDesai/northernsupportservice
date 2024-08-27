@@ -61,16 +61,11 @@
                                 <p class="successmessage" id="responseMessage" style="display:none;"></p>
                                 <form id="contactForm">
 
-                                    <label for="name">Full Name:</label>
-                                    <input type="text" id="name" name="name" required>
-                
-                                    <label for="email">Email Address:</label>
-                                    <input type="email" id="email" name="email" required>
-                
-                                    <label for="phone">Phone Number:</label>
-                                    <input type="phone" id="phone" name="phone" required>
-                
-                                    <label for="dropdown" style="margin-top:2%;">Select an option:</label>
+                                    <input type="text" id="name" name="name" placeholder="Full Name" required>
+                                    <input type="email" id="email" name="email"  placeholder="Email" required>
+                                    <input type="phone" id="phone" name="phone" placeholder="Phone Number" required>
+                                    
+                                    <label for="role">Select the role you are applying for</label>
                                     <select id="dropdown" name="dropdown">
                                         <option value="option1">Disability Support Worker</option>
                                         <option value="option2">Admin</option>
@@ -78,10 +73,9 @@
                                         <option value="option3">Disability Services Officer</option>
                                         <option value="option3">Registered Nurse</option>
                                     </select>
-                
-                                    <label for="resume" style="margin-top:2%;">Upload Resume:</label>
-                                    <input type="file" id="resume" name="resume"  accept=".pdf" required>
-
+                                    
+                                    <label for="resume">Please upload your resume</label>
+                                    <input type="file" id="resume" name="resume" accept=".pdf" required>
                                     <button type="submit" class="submit">Send</button>
                                 </form>
                             </div>
