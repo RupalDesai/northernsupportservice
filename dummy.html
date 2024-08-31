@@ -5,111 +5,118 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="functionality/css/dummy.css" />
 <link rel="stylesheet" href="functionality/css/homepage.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
 </head>
 <body>
-    <div>
+    <div class="padding-corner" style="text-align: left;">
         <section class="services-grid">
-            <div class="grid">
-                <div class="grid-item" style="background-color: rgb(21, 21, 85); color: white;">
-                    <p>
-                        We are here to help you navigate your NDIS journey. Whether you have questions about our
-                        services, need assistance with your NDIS plan, or simply want to learn more about how we
-                        can support you or your loved ones, please don’t hesitate to reach out.
-                    </p>
-                    <h3>
-                        Contact us for:
-                    </h3>
-                    <div>
-                        <ul>
-                            <li>General inquiries about our services</li>
-                            <li>Assistance with NDIS plans and funding</li>
-                            <li> Scheduling consultations or appointments</li>
-                            <li>Providing feedback or making a complaint</li>
-                            <li>Any other questions or concerns</li>
-                        </ul>
+            <div>   
+                <div class="grid">
+                    <div class="grid-items" style="background-color: rgb(186, 186, 223); color: black; margin:2%; border-radius:10px;">
+                        <h2>Contact us directly at</h2>
+                        <img src="functionality/images/contact.png" alt="Image" style="width:30%;height:40%;">
+                        <h3><i class="fas fa-phone"></i> +1 123 456 7890</h3>
+                        <h3><i class="fas fa-envelope"></i> contact@example.com</h3>
                     </div>
-                    <p>
-                        You can also fill out the contact form below, and one of our friendly team members will get
-                        back to you as soon as possible.
-                    </p>
-                    <button class="open-modal-btn" id="openModal1">Open Contact Form 1</button>
+                    <div class="grid-items" style="background-color: rgb(21, 21, 85); color: white; margin-bottom:2%;  padding:2%; border-radius:10px;">
+                        <div>
+                            <h3>
+                                Participant Referral Form
+                            </h3>
+                            <p>
+                                We are here to help you navigate your NDIS journey. Whether you have questions about our
+                                services, need assistance with your NDIS plan, or simply want to learn more about how we
+                                can support you or your loved ones, please don’t hesitate to reach out.
+                            </p>
+                            <p>We provide top-quality care and support to NDIS participants. Referrals can be made by
+                                family members, carers, support coordinators, health professionals, GPs, other service
+                                providers, or the participants themselves. To refer, complete and submit our online Participant
+                                Referral Form detailing the participant’s needs. Our intake team will review the submission,
+                                contact the participant or their representative, arrange an initial consultation, and develop a
+                                tailored support plan. Referring participants to our services helps them achieve greater
+                                independence and fulfilment. We ensure all information remains confidential and is used
+                                solely for assessing and providing necessary support.
+                            </p>
+                            <p>
+                                Need Help? If you need assistance completing the referral form or have any questions, please
+                                contact our friendly team at 0492507087. We’re here to help.
+                            </p>
+                            <button class="open-modal-btn"id="openModalBtn">Participant Referral Form</button>
+                        </div>
+                    </div>
                 </div>
-                <div class="grid-item" style="background-color: rgb(21, 21, 85); color: white;">
-                    <h3>
-                        Participant Referral Form
-                    </h3>
-                    <p>
-                        We are here to help you navigate your NDIS journey. Whether you have questions about our
-                        services, need assistance with your NDIS plan, or simply want to learn more about how we
-                        can support you or your loved ones, please don’t hesitate to reach out.
-                    </p>
-                    <p>We provide top-quality care and support to NDIS participants. Referrals can be made by
-                        family members, carers, support coordinators, health professionals, GPs, other service
-                        providers, or the participants themselves. To refer, complete and submit our online Participant
-                        Referral Form detailing the participant’s needs. Our intake team will review the submission,
-                        contact the participant or their representative, arrange an initial consultation, and develop a
-                        tailored support plan. Referring participants to our services helps them achieve greater
-                        independence and fulfilment. We ensure all information remains confidential and is used
-                        solely for assessing and providing necessary support.
-                    </p>
-                    <p>
-                        Need Help? If you need assistance completing the referral form or have any questions, please
-                        contact our friendly team at 0492507087. We’re here to help.
-                    </p>
-                    <button class="open-modal-btn" id="openModal2">Open Contact Form 2</button>
-                </div>
-            </div>
-        </section>        
-
-        <!-- The Modal for Contact Form 1 -->
-        <div id="myModal1" class="modal">
-            <div class="modal-content">
-            <span class="close" id="closeModal1">&times;</span>
-            <div class="contact-form">
-                <p class="successmessage" id="responseMessage" style="display:none;"></p>
-                <form id="contactForm">
-
-                    <input type="text" id="name" name="name" placeholder="Full Name" required>
-                    <input type="email" id="email" name="email" placeholder="Email" required>
-                    <input type="text" id="phone" name="phone" placeholder="Phone number" required>
-                    <textarea rows="4" id="referral" name="referral" placeholder="How do you know about us?"></textarea>
-                    <textarea rows="4" id="message" name="message" placeholder="How can we help you?"></textarea>
-
-                    <button type="submit" class="submit">Send</button>
-                </form>
-            </div>
-            </div>
-        </div>
-        
-        <!-- The Modal for Contact Form 2 -->
-        <div id="myModal2" class="modal">
-            <div class="modal-content">
-            <span class="close" id="closeModal2">&times;</span>
-             <!-- Referral Form -->
-             <div class="contact-form">
-                <p class="successmessage" id="responseMessage" style="display:none;"></p>
-                <form id="contactForm">
-                    <h2 style="color: white;">Participant Details</h2>
-                    <input type="text" id="pname" name="pname" placeholder="Full Name" required>
-                    <input type="text" id="pndisNumber" name="pndisNumber" placeholder="Participant NDIS number" required>
-                    <input type="date" id="pdate" name="pdate" placeholder="Date of Birth" required>
-                    <input type="text" id="pphone" name="pphone" placeholder="Phone Number" required>
-                    <input type="email" id="pemail" name="pemail" placeholder="Email address" required>
-                    <textarea rows="4" id="pAddress" name="pAddress" placeholder="Address"></textarea>
-
-                    <h2 style="color: white;">Referrer's Details</h2>
-                    <input type="text" id="rname" name="rname" placeholder="Full Name" required>
-                    <input type="text" id="rorgname" name="rorgname" placeholder="Organization Name" required>
-                    <input type="text" id="rphone" name="rphone" placeholder="Phone Number" required>
-                    <input type="email" id="remail" name="remail" placeholder="Email address" required>
+                <div class="contact-container" style="background-color: rgb(21, 21, 85); color: white; text-align:left;">
+                    <div class="contact-info">
+                       <h3>
+                        Contact Form
+                       </h3>
+                        <p>
+                            We are here to help you navigate your NDIS journey. Whether you have questions about our
+                            services, need assistance with your NDIS plan, or simply want to learn more about how we
+                            can support you or your loved ones, please don’t hesitate to reach out.
+                        </p>
+                        <h3>
+                            Contact us for:
+                        </h3>
+                        <div>
+                            <ul>
+                                <li>General inquiries about our services</li>
+                                <li>Assistance with NDIS plans and funding</li>
+                                <li> Scheduling consultations or appointments</li>
+                                <li>Providing feedback or making a complaint</li>
+                                <li>Any other questions or concerns</li>
+                            </ul>
+                        </div>
+                        <p>
+                            You can also fill out the contact form below, and one of our friendly team members will get
+                            back to you as soon as possible.
+                        </p>
+                    </div>
                     
-                    <h2 style="color: white;">Other Information</h2>
-                    <textarea rows="4" id="otherDetails" name="otherDetails" placeholder="Message (Optional)"></textarea>
-
-                    <button type="submit" class="submit">Send</button>
-                </form>
+                    <!-- Contact Form -->
+                    <div class="contact-form">
+                        <p class="successmessage" id="responseMessage" style="display:none;"></p>
+                        <form id="contactForm">
+                            <input type="text" id="name" name="name" placeholder="Full Name" required>
+                            <input type="email" id="email" name="email" placeholder="Email" required>
+                            <input type="text" id="phone" name="phone" placeholder="Phone number" required>
+                            <textarea rows="4" id="referral" name="referral" placeholder="How do you know about us?"></textarea>
+                            <textarea rows="4" id="message" name="message" placeholder="How can we help you?"></textarea>
+                            <button type="submit" class="submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
             </div>
+        </section>
+        
+          <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class="contact-form">
+                    <p class="successmessage" id="responseMessage" style="display:none;"></p>
+                    <form id="contactForm">
+                        <h2>Participant Details</h2>
+                        <input type="text" id="pname" name="pname" placeholder="Full Name" required>
+                        <input type="text" id="pndisNumber" name="pndisNumber" placeholder="Participant NDIS number" required>
+                        <input type="date" id="pdate" name="pdate" placeholder="Date of Birth" required>
+                        <input type="text" id="pphone" name="pphone" placeholder="Phone Number" required>
+                        <input type="email" id="pemail" name="pemail" placeholder="Email address" required>
+                        <textarea rows="4" id="pAddress" name="pAddress" placeholder="Address"></textarea>
+    
+                        <h2>Referrer's Details</h2>
+                        <input type="text" id="rname" name="rname" placeholder="Full Name" required>
+                        <input type="text" id="rorgname" name="rorgname" placeholder="Organization Name" required>
+                        <input type="text" id="rphone" name="rphone" placeholder="Phone Number" required>
+                        <input type="email" id="remail" name="remail" placeholder="Email address" required>
+                        
+                        <h2>Other Information</h2>
+                        <textarea rows="4" id="otherDetails" name="otherDetails" placeholder="Message (Optional)"></textarea>
+    
+                        <button type="submit" class="submit">Send</button>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
