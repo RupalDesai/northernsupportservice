@@ -60,12 +60,11 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  background-color:  rgb(42, 42, 88);
   padding: 30px;
   border-radius: 10px;
-  color: #fff;
   max-width: 1200px;
   margin: 0 auto;
+  background-color: rgb(166, 217, 247);
   }
   
   .contact-info, .contact-form {
@@ -148,8 +147,8 @@
       display: inline-block;
       margin-top: 15px;
       padding: 10px 20px;
-      background: white;
-      color: black;
+      background: rgb(65, 114, 206);
+      color: rgb(255, 255, 255);
       text-decoration: none;
       border-radius: 4px;
       transition: background 0.3s;

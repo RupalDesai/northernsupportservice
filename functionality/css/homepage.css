@@ -16,6 +16,7 @@
   
   .menu {
     font-weight: bolder;
+    font-size: 1em;
   }
 
   .menu li {
@@ -188,22 +189,10 @@
   }
   
   .padding-corner{
-    width: 80%; /* Adjust width as needed */
-    margin: 0 auto; /* This centers the element horizontally */
-    text-align: center; /* Centers text inside the container */
-    padding: 20px; /* Adds padding around the content */
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
   }
-
-  /* Container for the image */
-.oval-image-container {
-  width: 50%; /* Set the desired width */
-  height: 50%; /* Set the desired height */
-  overflow: hidden; /* Hide any overflow from the image */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%; /* Make the container oval */
-}
 
 .services-container {
   display: flex;
@@ -275,28 +264,24 @@
 }
 
 .grid-item {
-  padding: 2%;
-  background-color: white;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, background-color 0.3s ease;
-  background-color: rgb(21, 21, 85);	
 }
 
 .grid-item:hover {
   transform: translateY(-5px);
-  background-color: rgb(7, 52, 69);
+  background-color: rgb(6, 18, 33);
+  color:white;
 }
 
 .grid-item h3 {
   font-size: 1.5em;
   margin-bottom: 2%;
-  color: rgb(175, 208, 227) ;
 }
 
 .grid-item p {
   font-size: 1.1em;
-  color: white;
 }
 
 .grid-item img
@@ -305,6 +290,7 @@
   height: auto;
   display: block;
   border-radius: 5px;
+  background-color: white;
 }
 
 .image-container-footer {
@@ -330,7 +316,6 @@
   padding: 30px;
   border-radius: 10px;
   color: black;
-  max-width: 1200px;
   margin: 0 auto;
   }
   
@@ -497,4 +482,70 @@ font-size: 1.5em;
   }
 }
 
-/* Add this class to the elements you want to fade in */
+.font{
+  font-size: 1.5em;
+  margin:1%;
+}
+
+ /* CSS for the footer */
+ .footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  background-color: #1b1f46;
+  color: white;
+  padding: 2%;
+  text-align: center;
+}
+
+.footer-sections {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-bottom: 1%;
+}
+
+.footer-section {
+  flex: 1;
+  padding: 1% 2%;
+}
+
+.footer-section img {
+  max-width: 35%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.footer-section p {
+  margin: 0;
+  text-align: justify;
+}
+
+.footer-contact {
+  text-align: left;
+}
+
+.footer-paragraph {
+  text-align: justify;
+}
+
+.footer-copyright {
+  text-align: center;
+  border-top: 1px solid #444;
+  padding-top: 10px;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .footer-sections {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .footer-contact {
+      text-align: center;
+  }
+}
