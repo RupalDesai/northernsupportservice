@@ -72,3 +72,62 @@ window.addEventListener('load', function() {
     document.querySelector('.containerRotate').classList.add('visible');
 });
 
+
+document.getElementById('contactForm2').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const pname = document.getElementById('pname').value;
+    const pndisNumber = document.getElementById('pndisNumber').value;
+    const pdate = document.getElementById('pdate').value;
+    const pphone = document.getElementById('pphone').value;
+    const pemail =  document.getElementById('pemail').value;
+    const pAddress = document.getElementById('pAddress').value;
+
+    const rname = document.getElementById('rname').value;
+    const rorgname = document.getElementById('rorgname').value;
+    const rphone = document.getElementById('rphone').value;
+    const remail = document.getElementById('remail').value;
+
+    const otherDetails =  document.getElementById('otherDetails').value;
+    
+    const data = {
+        service_id: 'service_q2debbn',
+        template_id: 'template_z0ap21y',
+        user_id: '8yddtZXCraQjrxFhe',
+        template_params: {
+            'pname': pname,
+            'pndisNumber': pndisNumber,
+            'pdate': pdate,
+            'pphone': pphone,
+            'pemail': pemail,
+            'pAddress': pAddress,
+            'rname': rname,
+            'rorgname': rorgname,
+            'rphone': rphone,
+            'remail': remail,
+            'otherDetails': otherDetails
+        }
+    };
+
+    fetch('https://api.emailjs.com/api/v1.0/email/send', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+    })
+    .then(data => {
+        document.getElementById('responseMessage').innerText = 'Thank you for submitting the form. We will get back to you ASAP. ';
+        document.getElementById('responseMessage').style.display = 'block';
+        document.getElementById('contactForm2').reset();
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        document.getElementById('responseMessage').innerText = 'An error occurred while sending the message.';
+        document.getElementById('responseMessage').style.display = 'block';
+    });
+});
+
+window.addEventListener('load', function() {
+    document.querySelector('.containerRotate').classList.add('visible');
+});
