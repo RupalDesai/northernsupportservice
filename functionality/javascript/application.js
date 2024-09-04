@@ -4,6 +4,7 @@ document.getElementById('contactForm').addEventListener('submit', function(event
     const name = document.getElementById('name').value;
     const email = document.getElementById('email').value;
     const phone = document.getElementById('phone').value;
+    const role = document.getElementById('dropdown').value;
     const resume =  document.getElementById('resume').files[0];
 
     const data = {
@@ -14,6 +15,7 @@ document.getElementById('contactForm').addEventListener('submit', function(event
             'name': name,
             'email': email,
             'phone': phone,
+            'role': role,
             'resume': resume
         }
     };
@@ -26,7 +28,7 @@ document.getElementById('contactForm').addEventListener('submit', function(event
         body: JSON.stringify(data)
     })
     .then(data => {
-        document.getElementById('responseMessage').innerText = 'Message sent successfully!';
+        document.getElementById('responseMessage').innerText = 'Thank you for submitting the form. We will get back to you ASAP. ';
         document.getElementById('responseMessage').style.display = 'block';
         document.getElementById('contactForm').reset();
     })
