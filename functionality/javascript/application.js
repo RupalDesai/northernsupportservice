@@ -5,7 +5,6 @@ document.getElementById('contactForm').addEventListener('submit', function(event
     const email = document.getElementById('email').value;
     const phone = document.getElementById('phone').value;
     const role = document.getElementById('dropdown').value;
-    const resume =  document.getElementById('resume').files[0];
 
     const data = {
         service_id: 'service_q2debbn',
@@ -16,7 +15,6 @@ document.getElementById('contactForm').addEventListener('submit', function(event
             'email': email,
             'phone': phone,
             'role': role,
-            'resume': resume
         }
     };
 

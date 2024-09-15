@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Get the modal
     var modal = document.getElementById("myModal");
   
     // Get the button that opens the modal
@@ -25,7 +24,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
   });
-  
 
   document.getElementById('contactForm').addEventListener('submit', function(event) {
     event.preventDefault();
@@ -91,9 +89,9 @@ document.getElementById('contactForm2').addEventListener('submit', function(even
     const otherDetails =  document.getElementById('otherDetails').value;
     
     const data = {
-        service_id: 'service_q2debbn',
-        template_id: 'template_z0ap21y',
-        user_id: '8yddtZXCraQjrxFhe',
+        service_id: 'service_vnbo2bd',
+        template_id: 'template_nuu6g7n',
+        user_id: 'O3bYaQOgwUmPC3aMK',
         template_params: {
             'pname': pname,
             'pndisNumber': pndisNumber,
@@ -117,14 +115,14 @@ document.getElementById('contactForm2').addEventListener('submit', function(even
         body: JSON.stringify(data)
     })
     .then(data => {
-        document.getElementById('responseMessage').innerText = 'Thank you for submitting the form. We will get back to you ASAP. ';
-        document.getElementById('responseMessage').style.display = 'block';
+        document.getElementById('responseMessage2').innerText = 'Thank you for submitting the form. We will get back to you ASAP. ';
+        document.getElementById('responseMessage2').style.display = 'block';
         document.getElementById('contactForm2').reset();
     })
     .catch(error => {
         console.error('Error:', error);
-        document.getElementById('responseMessage').innerText = 'An error occurred while sending the message.';
-        document.getElementById('responseMessage').style.display = 'block';
+        document.getElementById('responseMessage2').innerText = 'An error occurred while sending the message.';
+        document.getElementById('responseMessage2').style.display = 'block';
     });
 });
 
